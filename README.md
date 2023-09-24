@@ -1,1 +1,2 @@
 # Lampada
+![preview](preview.jpg)
