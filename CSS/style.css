@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+
+}
+
+
+body, main, .boxCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    cursor: default;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../IMG/BG.jpg);
+    background-size: cover;
+}
+
+section, .boxRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+    
+}
+
+section {
+    justify-content: space-around;
+    width: 90vw;
+    height: 85vh;
+
+}
+
+
+h1, p, li 
+{
+    font-family: 'Roboto', sans-serif;
+    color: #010133;
+    text-align: start;
+    opacity: 100%;
+}
+
+h1 {
+width: 100%;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+p {
+    white-space:pre-line ;
+    font-weight: 400;
+    padding: 1.5em 0;
+}
+
+button {
+    width: 8em;
+    padding: 0.6em 1.5em;
+    margin: 1em;
+    border-radius: 20em;
+    border: solid 0.2em #162161;
+    color: #94a1ac;
+    background-color: #030c42;
+}
+
+button:hover {
+    background-color: #162161;
+    border: solid 0.2em #030c42;
+}
+
+    button:active{ 
+   
+    background-color: #162161;
+    box-shadow: 0 0 1em 0.30em  #dff0f0,
+      0 0 8em 4ch #dae7e7;     
+      inset 0 0 0.75em 0.25em  #dff0f0;
+}
+
+#container-lamp{
+    height: 90vh;
+    justify-content: flex-start;
+    align-items: flex-end;
+ 
+}
+
+.div-text {
+   background-color: #f0f8ff;
+   border-radius: 2em;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 80%;
+    height: auto;
+    word-wrap: break-word;
+    padding: 2em;
+    opacity: 55%;
+    margin-top: 2em;
+}
+
+.div-text:hover{
+    opacity: 75%;
+}
+
+.div-lamp {
+    padding: 2em;
+    border-radius: 20px;
+    background: #D9D9D9;
+    color: #dae7e7;
+    background-color: #dff0f0;
+   /* box-shadow: 0 0 1em 0.15em  #dff0f0,
+      0 0 4em 2em #dae7e7;
+      
+      inset 0 0 0.75em 0.25em  #dff0f0;*/
+}
+
+#imgLamp {
+    width: 15em;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 900px) {
+   Section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1em;
+   }
+   .div-text{
+    width: 100%;
+    margin:0;
+    padding: 2em;
+   }
+   #container-lamp{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+  }
